@@ -9,6 +9,7 @@ pub fn input() -> Vec<u64> {
 }
 
 //all values should be positive
+#[inline]
 pub fn part_a() -> u64 {
     let data = input();
     let mut answer = 0;
@@ -20,6 +21,7 @@ pub fn part_a() -> u64 {
     answer
 }
 
+#[inline]
 pub fn part_b() -> u64 {
     let data = input();
     let mut answer = 0;
@@ -29,16 +31,4 @@ pub fn part_b() -> u64 {
         }
     }
     answer
-}
-
-#[cfg(test)]
-mod tests {
-    #[test]
-    fn part_a() {
-        assert_eq!(super::part_a(), 1301);
-    }
-    #[test]
-    fn part_b() {
-        assert_eq!(super::part_b(), 1346);
-    }
 }
