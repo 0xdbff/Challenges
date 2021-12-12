@@ -14,6 +14,6 @@ fn day2() {
 
 #[test]
 fn day3() {
-    //assert_eq!(day2::part_a(), 1635930);
+    assert_eq!(day3::part_a(), 4191876);
     //assert_eq!(day2::part_b(), 1781819478);
 }
