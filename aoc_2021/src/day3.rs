@@ -13,10 +13,10 @@ pub fn part_a() -> usize {
             };
         }
         char_cnt += 1;
-        if (column_total as f64 / file.len() as f64) > 0.5 {
+        if (column_total as f64 / file.len() as f64).gt(&0.5) {
             gamma.push('1');
             epsilon.push('0');
-        } else if (column_total as f64 / file.len() as f64) < 0.5 {
+        } else if (column_total as f64 / file.len() as f64).lt(&0.5) {
             gamma.push('0');
             epsilon.push('1');
         } else {
